@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Online</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verifique o Status</h1>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='https://downdetector.com.br/'">Downdetector</button>
+        <button class="button" onclick="window.location.href='https://discordstatus.com/'">Discord Status</button>
+        <button class="button" onclick="window.location.href='https://www.cloudflarestatus.com/'">Cloudflare Status</button>
+        <button class="button" onclick="window.location.href='https://status.ix.br/'">IX.br</button>
+        <button class="button" onclick="window.location.href='https://health.aws.amazon.com/health/status'">AWS Status</button>
+    </div>
+</body>
+</html>
